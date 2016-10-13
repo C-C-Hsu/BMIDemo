@@ -18,26 +18,32 @@ class ViewController: UIViewController, UITextFieldDelegate {
         
         // BMI = 體重 / 身高米的平方
         
+        // 因為考量身高跟體重有小數點,所以使用 Float 格式,另外 Float("String") 可以將 String 轉為 Float
         let Height = Float(tf_height.text!)!
         let Weight = Float(tf_weight.text!)!
-        // 因為考量身高跟體重有小數點,所以使用 Float 格式,另外 Float("String") 可以將 String 轉為 Float
         
-        var myHeight = Height / 100     // 設定一個變數,讓身高從公分變公尺
-        
-        myHeight = myHeight * myHeight  // 讓身高變成 米平方
-        
-        let BMI = Weight / myHeight     // 計算 BMI 的值,並且讓他存到 BMI 常數裡面
-        
-        l_BMI.text = String(BMI)        // 讓 Label 顯示文字,內容為 BMI 的值
-        
+        // 設定一個變數,讓身高從公分變公尺
+        var myHeight = Height / 100
+        // 讓身高變成 米平方
+        myHeight = myHeight * myHeight
+        // 計算 BMI 的值,並且讓他存到 BMI 常數裡面
+        let BMI = Weight / myHeight
         // String(Any Value) 可以將括弧內的值變成文字
+        l_BMI.text = String(BMI)
         
-        view.endEditing(true)
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        // Do any additional setup after loading the view, typically from a nib.\
+        
+        // tf_height & tf_weight 綁定 UITextFieldDelegate
+        tf_height.delegate = self
+        tf_weight.delegate = self
+    
+        // 這邊我增加了點擊空白處可以隱藏鍵盤用
+        let tap = UITapGestureRecognizer(target: self, action: #selector(ViewController.dismissKeyboard))
+        view.addGestureRecognizer(tap)
     }
 
     override func didReceiveMemoryWarning() {
@@ -45,10 +51,11 @@ class ViewController: UIViewController, UITextFieldDelegate {
         // Dispose of any resources that can be recreated.
     }
     
+    // MARK: UITextFieldDelegate Methods
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         
         view.endEditing(true)
-        return true
+        return false
     }
     
     func dismissKeyboard() {
