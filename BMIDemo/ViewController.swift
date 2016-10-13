@@ -10,6 +10,10 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var tf_height: UITextField!
+    @IBOutlet weak var tf_weight: UITextField!
+    @IBOutlet weak var l_BMI: UILabel!
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.

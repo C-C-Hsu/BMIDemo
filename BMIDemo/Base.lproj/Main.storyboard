@@ -34,7 +34,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="單位：公分" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="I2B-Vp-qtH">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="單位：公分" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="I2B-Vp-qtH">
+                                <frame key="frameInset" minX="115" minY="36" width="243" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
@@ -83,6 +84,13 @@
                             <constraint firstItem="AXD-CQ-Fgd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="vb0-lL-qPX"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="l_BMI" destination="rl2-Gc-xaO" id="qgX-CJ-oZc"/>
+                        <outlet property="tfHeight" destination="I2B-Vp-qtH" id="4ds-Ug-Zex"/>
+                        <outlet property="tfWeight" destination="dl0-Kc-jHO" id="LqB-y2-7bV"/>
+                        <outlet property="tf_height" destination="I2B-Vp-qtH" id="VVT-IP-41d"/>
+                        <outlet property="tf_weight" destination="dl0-Kc-jHO" id="Gjm-Kb-TgB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
