@@ -51,6 +51,9 @@ class ViewController: UIViewController, UITextFieldDelegate {
         return true
     }
     
-
+    func dismissKeyboard() {
+        
+        view.endEditing(true)           // 這邊是隱藏鍵盤用
+    }
 }
 
