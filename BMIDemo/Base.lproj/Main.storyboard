@@ -34,8 +34,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="單位：公分" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="I2B-Vp-qtH">
-                                <frame key="frameInset" minX="115" minY="36" width="243" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="單位：公分" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="I2B-Vp-qtH">
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
@@ -61,6 +60,9 @@
                                         <integer key="value" value="5"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="b_calcBMI:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PSq-yj-Gb8"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -74,11 +76,11 @@
                             <constraint firstItem="I2B-Vp-qtH" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="16" id="OiQ-zA-b1g"/>
                             <constraint firstItem="JHg-k4-PBY" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="21" id="R1X-j0-QdY"/>
                             <constraint firstItem="85d-UI-ZNm" firstAttribute="top" secondItem="AXD-CQ-Fgd" secondAttribute="bottom" constant="40" id="Soy-4R-tFb"/>
-                            <constraint firstItem="I2B-Vp-qtH" firstAttribute="leading" secondItem="JHg-k4-PBY" secondAttribute="trailing" constant="13" id="VWu-1C-Jeb"/>
+                            <constraint firstItem="I2B-Vp-qtH" firstAttribute="leading" secondItem="JHg-k4-PBY" secondAttribute="trailing" constant="12" id="VWu-1C-Jeb"/>
                             <constraint firstAttribute="trailingMargin" secondItem="rl2-Gc-xaO" secondAttribute="trailing" id="ZcF-zC-8h6"/>
                             <constraint firstItem="dl0-Kc-jHO" firstAttribute="top" secondItem="I2B-Vp-qtH" secondAttribute="bottom" constant="31" id="dQG-wE-A4R"/>
                             <constraint firstItem="JHg-k4-PBY" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="if4-ks-BLY"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="I2B-Vp-qtH" secondAttribute="trailing" id="mHn-U7-fqh"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="I2B-Vp-qtH" secondAttribute="trailing" constant="1" id="mHn-U7-fqh"/>
                             <constraint firstItem="x4g-6E-4po" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="nMk-8K-Qxy"/>
                             <constraint firstItem="AXD-CQ-Fgd" firstAttribute="top" secondItem="x4g-6E-4po" secondAttribute="bottom" constant="40" id="vSs-HD-jLN"/>
                             <constraint firstItem="AXD-CQ-Fgd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="vb0-lL-qPX"/>
@@ -86,8 +88,6 @@
                     </view>
                     <connections>
                         <outlet property="l_BMI" destination="rl2-Gc-xaO" id="qgX-CJ-oZc"/>
-                        <outlet property="tfHeight" destination="I2B-Vp-qtH" id="4ds-Ug-Zex"/>
-                        <outlet property="tfWeight" destination="dl0-Kc-jHO" id="LqB-y2-7bV"/>
                         <outlet property="tf_height" destination="I2B-Vp-qtH" id="VVT-IP-41d"/>
                         <outlet property="tf_weight" destination="dl0-Kc-jHO" id="Gjm-Kb-TgB"/>
                     </connections>
