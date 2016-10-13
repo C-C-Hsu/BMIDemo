@@ -49,9 +49,13 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="85d-UI-ZNm">
+                                <state key="normal" title="開始計算"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="85d-UI-ZNm" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="113" id="511-XS-G9A"/>
                             <constraint firstItem="fvC-Aw-KID" firstAttribute="leading" secondItem="AXD-CQ-Fgd" secondAttribute="trailing" constant="19" id="5Am-gC-i1D"/>
                             <constraint firstAttribute="trailingMargin" secondItem="dl0-Kc-jHO" secondAttribute="trailing" constant="67" id="8rH-Ud-Kj0"/>
                             <constraint firstItem="x4g-6E-4po" firstAttribute="top" secondItem="JHg-k4-PBY" secondAttribute="bottom" constant="40" id="AsE-0G-g3L"/>
@@ -60,6 +64,7 @@
                             <constraint firstItem="JHg-k4-PBY" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="21" id="R1X-j0-QdY"/>
                             <constraint firstAttribute="trailingMargin" secondItem="fvC-Aw-KID" secondAttribute="trailing" constant="67" id="S0h-RC-kKi"/>
                             <constraint firstItem="fvC-Aw-KID" firstAttribute="top" secondItem="dl0-Kc-jHO" secondAttribute="bottom" constant="36" id="SJj-BC-rz2"/>
+                            <constraint firstItem="85d-UI-ZNm" firstAttribute="top" secondItem="AXD-CQ-Fgd" secondAttribute="bottom" constant="37" id="Soy-4R-tFb"/>
                             <constraint firstItem="I2B-Vp-qtH" firstAttribute="leading" secondItem="JHg-k4-PBY" secondAttribute="trailing" constant="14" id="VWu-1C-Jeb"/>
                             <constraint firstItem="dl0-Kc-jHO" firstAttribute="top" secondItem="I2B-Vp-qtH" secondAttribute="bottom" constant="31" id="dQG-wE-A4R"/>
                             <constraint firstItem="JHg-k4-PBY" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="23" id="if4-ks-BLY"/>
